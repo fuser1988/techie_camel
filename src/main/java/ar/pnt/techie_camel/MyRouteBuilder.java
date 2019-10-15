@@ -15,8 +15,8 @@ public class MyRouteBuilder extends RouteBuilder {
         // here is a sample which set a raondom body then performs content
         // based routing on the message using method references
 
-        from("timer:simple?period=1000")
-        .log("procesando mensage")
+        from("timer:simple?period=1000")        
+        .log("procesando mensage")                 // log("Body = ${body}")
         .end();        
     }
 }
