@@ -22,7 +22,7 @@
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-parent</artifactId>
-                <version>3.0.0-RC2</version>
+                <version>3.0.0</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -60,6 +60,11 @@
             <artifactId>log4j-slf4j-impl</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-jackson</artifactId>
+            </dependency>
+
 
         <!-- testing -->
         <dependency>
@@ -101,7 +106,8 @@
                     <includePluginDependencies>false</includePluginDependencies>
                 </configuration>
             </plugin>
-
+            
+            
         </plugins>
     </build>
 
